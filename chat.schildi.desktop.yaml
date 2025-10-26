@@ -58,8 +58,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/tcltk/tcl.git
-        tag: core-8-6-11
-        commit: 17b5b3e0201cdf92d3c125776e1b2dd453f225bd
+        tag: core-8-6-17
+        commit: b522ab7c2ad740a068df9546538405f8d2a2c703
   - name: sqlcipher
     rm-configure: true
     config-opts:
@@ -70,8 +70,8 @@ modules:
       ldflags: "-lcrypto"
     sources:
       - type: archive
-        url: https://github.com/sqlcipher/sqlcipher/archive/v4.3.0.tar.gz
-        sha256: fccb37e440ada898902b294d02cde7af9e8706b185d77ed9f6f4d5b18b4c305f
+        url: https://github.com/sqlcipher/sqlcipher/archive/v4.11.0.tar.gz
+        sha256: bfa85505001dfb6c7f4ab532a39af0ed11d255cd11763bb070d6bb6ac6739a64
       - type: shell
         commands:
           - cp -p /usr/share/automake-*/config.{sub,guess} .
